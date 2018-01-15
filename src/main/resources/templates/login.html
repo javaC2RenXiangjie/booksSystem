@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="/css/modalSlidIn.css"></link>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>LoginBooksSystem</title>
+</head>
+<body background="/images/background.jpg" style="background-size: cover;">
+
+    <!--accountInformation modal-->
+    <div class="modal right fade" role="dialog" aria-labelledby="mySmallModalLabel" id="accountInfoModal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;">
+                    <h4 class="modal-title">Account Informations</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>account</th>
+                                <th>password</th>
+                                <th>role</th>
+                            </tr>
+                            <tr>
+                                <td>renxiangjie</td>
+                                <td>renxiangjie</td>
+                                <td>管理员</td>
+                            </tr>
+                            <tr>
+                                <td>王荣唐</td>
+                                <td>王荣唐</td>
+                                <td>管理员</td>
+                            </tr>
+                            <tr>
+                                <td>renxiang</td>
+                                <td>renxiang</td>
+                                <td>普通成员</td>
+                            </tr>
+                            <tr>
+                                <td>mrzhi</td>
+                                <td>mrzhi</td>
+                                <td>普通成员</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--login modal-->
+    <div class="modal fade `bs-example-modal-sm" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal" data-backdrop="static"  >
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;">
+                    <h4 class="modal-title">Sign In The System</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" placeholder="账号" id="account"></input>
+                    <br></br>
+                    <input type="text" class="form-control" placeholder="密码" id="password"></input>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">注册</button>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;
+                    <button type="button" class="btn btn-primary .col-md-4 .col-md-offset-4" onclick="login()">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/login.js"></script>
+</body>
+</html>
